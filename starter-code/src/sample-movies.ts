@@ -1,11 +1,12 @@
-[
+const movies: Array<Object> = [
   {
     id: 1,
     title: "The Shawshank Redemption",
     poster: "https://i.imgur.com/SuW2ZlC.jpg",
     synopsis: "In 1947, Andy Dufresne (Tim Robbins), a banker in Maine, is convicted of murdering his wife and her lover, a golf pro. Since the state of Maine has no death...",
     genres: [
-      "Crime", "Drama"
+      "Crime",
+      "Drama"
     ],
     year: 1994,
     director: "Frank Darabont",
@@ -16,14 +17,19 @@
       "William Sadler",
       "Clancy Brown",
       "Gil Bellows"
-    ]
+    ],
+    hours: [
+      "Wednesday 19:30, 22:30"
+    ],
+    room: 1
   }, {
     id: 2,
     title: "The Godfather",
     poster: "https://i.imgur.com/Uzvny9I.jpg",
     synopsis: "In late summer 1945, guests are gathered for the wedding reception of Don Vito Corleone's daughter Connie (Talia Shire) and Carlo Rizzi (Gianni Russo). Vito...",
     genres: [
-      "Crime", "Drama"
+      "Crime",
+      "Drama"
     ],
     year: 1972,
     director: "Francis Ford Coppola",
@@ -34,14 +40,20 @@
       "Richard S. Castellano",
       "Robert Duvall",
       "Sterling Hayden"
-    ]
+    ],
+    hours: [
+      "Tuesday 17:30, 21:30",
+      "Thursday 18:30, 22:30"
+    ],
+    room: 2
   }, {
     id: 3,
     title: "The Godfather Part II",
     poster: "https://i.imgur.com/abJNkWI.jpg",
     synopsis: "The Godfather Part II presents two parallel storylines. One involves Mafia chief Michael Corleone in 1958/1959 after the events of the first movie; the othe...",
     genres: [
-      "Crime", "Drama"
+      "Crime",
+      "Drama"
     ],
     year: 1974,
     director: "Francis Ford Coppola",
@@ -52,7 +64,12 @@
       "Robert De Niro",
       "John Cazale",
       "Talia Shire"
-    ]
+    ],
+    hours: [
+      "Monday 19:30, 22:30",
+      "Wednesday 20:00"
+    ],
+    room: 3
   }, {
     id: 4,
     title: "The Dark Knight",
@@ -70,7 +87,12 @@
       "Michael Caine",
       "Maggie Gyllenhaal",
       "Gary Oldman"
-    ]
+    ],
+    hours: [
+      "Wednesday 17:00, 20:00, 23:00",
+      "Thursday 19:00, 22:00"
+    ],
+    room: 4
   }, {
   {
     id: 5,
@@ -89,6 +111,12 @@
       "Caroline Goodall",
       "Jonathan Sagall",
       "Embeth Davidtz"
-    ]
+    ],
+    hours: [
+      "Friday 16:00, 19:00"
+    ],
+    room: 5
   }
 ]
+
+export default movies;
