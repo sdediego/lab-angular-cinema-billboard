@@ -1,4 +1,6 @@
-const movies: Array<Object> = [
+import { IMovie } from './interfaces/IMovie';
+
+const movies: Array<IMovie> = [
   {
     id: 1,
     title: "The Shawshank Redemption",
@@ -76,7 +78,10 @@ const movies: Array<Object> = [
     poster: "https://i.imgur.com/3jLPB46.jpg",
     synopsis: "The movie begins with a gang of men with clown masks breaking into the bank where the mob has a large portion of their money stashed. It begins with five cl...",
     genres: [
-      "Action", "Crime", "Drama", "Thriller"
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
     ],
     year: 2008,
     director: "Christopher Nolan",
@@ -94,13 +99,14 @@ const movies: Array<Object> = [
     ],
     room: 4
   }, {
-  {
     id: 5,
     title: "Schindler's List",
     poster: "https://i.imgur.com/IWZJOmu.jpg",
     synopsis: "The relocation of Polish Jews from surrounding areas to Krakow begins in late 1939, shortly after the outbreak of World War II, when the German Army defeats...",
     genres: [
-      "Biography", "Drama", "History"
+      "Biography",
+      "Drama",
+      "History"
     ],
     year: 1993,
     director: "Steven Spielberg",

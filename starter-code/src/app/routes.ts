@@ -3,8 +3,9 @@ import { MyHomeComponent } from './my-home/my-home.component';
 import { MyMovieComponent } from './my-movie/my-movie.component';
 
 const routes: Routes = [
-  { path: '/home',  component: MyHomeComponent },
-  { path: '/movie/:id', component: MyMovieComponent }
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home',  component: MyHomeComponent },
+  { path: 'movie/:id', component: MyMovieComponent }
 ];
 
 export { routes };

@@ -1,3 +1,9 @@
-<p>
-  my-home works!
-</p>
+<ul>
+  <li *ngFor="let movie of movies">
+    <div>
+      <p>ROOM {{ movie.room }}</p>
+      <img src="{{ movie.poster }}">
+      <p>{{ movie.title }}</p>
+    </div>
+  </li>
+</ul>
