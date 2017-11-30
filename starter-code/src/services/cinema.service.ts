@@ -12,8 +12,8 @@ export class CinemaService {
     return this.movies;
   }
 
-  getMovie(id): IMovie {
-    return this.movies.filter(movie => movie.id === id)[0];
+  getMovie(id) {
+    return this.movies.filter(movie => movie.id == id)[0];
   }
 
 }

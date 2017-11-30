@@ -1,0 +1,50 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main {
+  flex-basis: 40%;
+}
+
+.main p {
+  display: inline-block;
+  margin: 20px;
+}
+
+.main img {
+  height: 600px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.panel-info {
+  flex-basis: 40%;
+}
+
+.panel-info div {
+  display: block;
+  margin: 20px;
+}
+
+.panel-info li {
+  list-style: none;
+  margin: 0;
+  text-align: left;
+}
+
+.btn {
+  text-align: center;
+}
+
+button {
+  color: white;
+  background-color: #317589;
+  border: 0px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 18px;
+}

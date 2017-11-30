@@ -3,7 +3,9 @@
     <div>
       <p>ROOM {{ movie.room }}</p>
       <img src="{{ movie.poster }}">
-      <p>{{ movie.title }}</p>
+      <p><b><i>
+        <a [routerLink]="['..', 'movie', movie.id]">{{ movie.title }}</a>
+     </i></b></p>
     </div>
   </li>
 </ul>

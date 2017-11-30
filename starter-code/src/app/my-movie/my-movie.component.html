@@ -1,3 +1,35 @@
-<p>
-  my-movie works!
-</p>
+<div class="container">
+  <div class="main">
+    <p class="room">ROOM {{ movie.room }}</p>
+    <p><b><i>{{ movie.title }}</i></b></p>
+    <img src="{{ movie.poster }}">
+  </div>
+  <div class="panel-info">
+    <div>
+      <b>Genres:</b>
+      <ul><li *ngFor="let genre of movie.genres">{{ genre }}<br></li></ul>
+    </div>
+    <div>
+      <b>Year:</b>
+      <br>{{ movie.year }}
+    </div>
+    <div>
+      <b>Director:</b>
+      <br>{{ movie.director }}
+    </div>
+    <div>
+      <b>Actors:</b>
+      <br><span *ngFor="let actor of movie.actors">{{ actor }}<br></span>
+    </div>
+    <div>
+      <b>Schedule:</b>
+      <br><span *ngFor="let hour of movie.hours">{{ hour }}<br></span>
+    </div>
+    <div><b>Synopsis:</b>
+      <br>{{ movie.synopsis }}
+    </div>
+    <div class="btn">
+      <a [routerLink]="['', 'home']"><button>Go back</button></a>
+    </div>
+  </div>
+</div>

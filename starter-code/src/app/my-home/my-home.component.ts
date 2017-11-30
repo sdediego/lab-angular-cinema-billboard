@@ -8,7 +8,7 @@ import { CinemaService } from './../../services/cinema.service';
   providers: [CinemaService]
 })
 export class MyHomeComponent implements OnInit {
-  constructor(public cinema: CinemaService) { }
+  constructor(private cinema: CinemaService) { }
 
   ngOnInit() {
   }
